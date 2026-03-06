@@ -1,0 +1,129 @@
+/* RallySimFans plugin — s/km diff column */
+
+.rsf-plugin-header {
+  background-color: #1a3a5c;
+  color: #ffcc00;
+  font-weight: bold;
+  text-align: center;
+  padding: 4px 10px;
+  white-space: nowrap;
+  border-left: 2px solid #ffcc00;
+}
+
+.rsf-plugin-diff {
+  text-align: center;
+  padding: 2px 8px;
+  font-family: monospace;
+  font-weight: bold;
+  white-space: nowrap;
+  border-left: 2px solid rgba(255, 204, 0, 0.25);
+}
+
+/* ≤ 1 s/km — competitive */
+.rsf-plugin-diff--great { color: #008800 !important; }
+
+/* 1–3 s/km — decent */
+.rsf-plugin-diff--ok    { color: #7a9900 !important; }
+
+/* 3–6 s/km — slow */
+.rsf-plugin-diff--slow  { color: #dd9900 !important; }
+
+/* > 6 s/km — way off */
+.rsf-plugin-diff--bad   { color: #cc3333 !important; }
+
+/* No data */
+.rsf-plugin-diff--na    { color: #888888 !important; }
+
+/* Rally search bar (rally_online.php) */
+.rsf-plugin-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  justify-content: center;
+}
+
+.rsf-plugin-search-input {
+  padding: 5px 10px;
+  font-size: 14px;
+  width: 280px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  background: #222;
+  color: #eee;
+  outline: none;
+}
+
+.rsf-plugin-search-input:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 0 2px rgba(255, 204, 0, 0.25);
+}
+
+.rsf-plugin-search-label {
+  font-size: 13px;
+  color: #ccc;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  accent-color: #ffcc00;
+}
+
+.rsf-plugin-search-count {
+  font-size: 13px;
+  color: #aaa;
+  white-space: nowrap;
+}
+
+/* Favourites — star column header */
+.rsf-plugin-fav-header {
+  text-align: center;
+  color: #ffcc00;
+  font-size: 14px;
+  width: 28px;
+}
+
+/* Favourites — star cell in each row */
+.rsf-plugin-fav-cell {
+  text-align: center;
+  width: 28px;
+  padding: 0 !important;
+}
+
+/* Favourites — the star button itself */
+.rsf-plugin-fav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: #aaa;
+  padding: 2px 4px;
+  line-height: 1;
+  transition: transform 0.1s, color 0.1s;
+}
+.rsf-plugin-fav-btn:hover   { color: #ffcc00; transform: scale(1.3); }
+
+/* Pinned row — gold star and subtle left border */
+.rsf-plugin-pinned .rsf-plugin-fav-btn { color: #ffcc00; }
+.rsf-plugin-pinned { border-left: 3px solid #ffcc00 !important; }
+
+
+/* Filter bar */
+.rsf-plugin-filter {
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #cccccc;
+  text-align: center;
+}
+
+.rsf-plugin-filter label {
+  cursor: pointer;
+  user-select: none;
+}
+
+.rsf-plugin-filter-cb {
+  margin-right: 5px;
+  cursor: pointer;
+  accent-color: #ffcc00;
+}
