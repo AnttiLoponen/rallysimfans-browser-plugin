@@ -14,3 +14,8 @@ Browser Plugin for www.rallysimfans.hu website
 - Select "Load unpacked"
 - Select folder where you unarchived the files
 - Browse to rallysimfans.hu or refresh and you should see the new features
+
+## Changelog
+### V1.1
+- Stage lists can be filtered per surface
+- Fixed bug to show s/km in rally results also for user's own row and SR rows
