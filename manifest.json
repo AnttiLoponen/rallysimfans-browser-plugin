@@ -5,7 +5,7 @@
   "description": "Enhances RallySimFans website with more information",
   "content_scripts": [
     {
-      "matches": ["*://rallysimfans.hu/*"],
+      "matches": ["*://*.rallysimfans.hu/*"],
       "js": ["content.js"],
       "css": ["styles.css"],
       "run_at": "document_idle"
